@@ -48,7 +48,9 @@
     "lint-fix": "eslint --fix 'src/**/*.{js,ts,tsx}'",
     "format": "prettier --write 'src/*.{js,jsx,ts,tsx}'",
     "eject": "react-scripts eject",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate": "graphql-codegen --config codegen.yml",
+    "deploy": "./deploy.sh staging",
+    "deploy:prod": "bash deploy.sh prod"
   },
   "eslintConfig": {
     "extends": [
